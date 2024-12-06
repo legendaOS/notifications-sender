@@ -43,6 +43,10 @@ app.post('/', async (req, res) => {
     }
 })
 
+app.get('/', async (req, res) => {
+    res.json('get')
+})
+
 app.listen(port, () => {
     console.log(`Backend for Legenda BOT Sender notifications listening on port ${port}`)
 })
